@@ -1,0 +1,1070 @@
+<div id="settings-overlay-container"
+	style="background-color: white; min-height: 100%; width: 100%; position: absolute; padding: 0px 20px 20px 20px;">
+
+	<div class="container is-fullhd">
+
+		<div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+			<button id="settings-close-button" class="button">
+				<i class="fa fa-times" aria-hidden="true"></i>
+			</button>
+		</div>
+
+		<div class="columns">
+			<div class="column is-2">
+				<aside class="menu sticky">
+					<p class="menu-label" style="padding-top: 10px;">
+						Sections
+					</p>
+					<ul class="menu-list">
+						<li><a href="#user-interface">User Interface</a></li>
+						<li><a href="#reading-settings">Reading Settings</a></li>
+						<li><a href="#hotkeys">Hotkeys</a></li>
+						<li><a href="#experimental-settings">Experimental Settings</a></li>
+					</ul>
+				</aside>
+			</div>
+
+			<div class="column is-10">
+				<div class="settings-pane">
+
+					<a id="user-interface"></a>
+					<div class="columns">
+						<div class="column is-6">
+
+							<div id="license-key-box" class="box" style="display: none;">
+								<p id="license-key-header" class="subtitle is-6" style="cursor: pointer; margin: 0;">
+									<span id="license-key-header-caret"><i class="fas fa-caret-up"></i></span>
+									&nbsp;<span id="license-key-header-text">Purchased SwiftRead PRO? <span
+											style="text-decoration: underline;">Enter key here</span></span>
+								</p>
+								<div id="license-key-content" style="margin-top: 1.5rem; display: none;">
+									<div class="field has-addons">
+										<div class="control is-expanded is-small">
+											<input id="license-key" type="text" class="input is-small"
+												placeholder="Enter key here">
+										</div>
+										<div class="control">
+											<button id="license-key-submit" class="button is-primary is-small">
+												Submit
+											</button>
+										</div>
+									</div>
+									<p id="license-key-message" style="display: none;" class="is-size-7"></p>
+								</div>
+							</div>
+
+
+							<div class="box">
+								<p class="subtitle">Color Scheme <i class="far fa-question-circle setting-tippy"
+										data-tippy-content="<p>Pick among color schemes that were designed to maximize productivity, readability, and focus.</p><br><p>The Pro color schemes were designed to have enough contrast to meet the WCAG AAA guidelines for legibility. They also use colors that are highly rated for readability. Some themes  have less contrast than others to improve reading comfort over longer periods of time.</p>"></i>
+								</p>
+								<div class="columns">
+									<div class="column is-6">
+
+										<div class="color-scheme">
+											<div class="color-scheme-preview">
+												r<span class="highlighted-letter">e</span>ad
+											</div>
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentColorScheme" class=""
+															value="white-on-black">
+														White on Black
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="color-scheme">
+											<div class="color-scheme-preview">
+												r<span class="highlighted-letter">e</span>ad
+											</div>
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentColorScheme" class=""
+															value="beige">
+														Beige
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="color-scheme">
+											<div class="color-scheme-preview">
+												r<span class="highlighted-letter">e</span>ad
+											</div>
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentColorScheme" class=""
+															value="black-on-white-45">
+														Black on White Soft
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="color-scheme">
+											<div class="color-scheme-preview">
+												r<span class="highlighted-letter">e</span>ad
+											</div>
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentColorScheme" class=""
+															value="white-on-black-45">
+														White on Black Soft
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="color-scheme">
+											<div class="color-scheme-preview">
+												r<span class="highlighted-letter">e</span>ad
+											</div>
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentColorScheme" class=""
+															value="black-on-blue-45">
+														Black on Blue Soft
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="color-scheme">
+											<div class="color-scheme-preview">
+												r<span class="highlighted-letter">e</span>ad
+											</div>
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentColorScheme" class=""
+															value="white-on-blue">
+														White on Blue
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="color-scheme">
+											<div class="color-scheme-preview">
+												r<span class="highlighted-letter">e</span>ad
+											</div>
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentColorScheme" class=""
+															value="blue-on-blue-45">
+														Blue on Light Soft
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="color-scheme">
+											<div class="color-scheme-preview">
+												r<span class="highlighted-letter">e</span>ad
+											</div>
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentColorScheme" class=""
+															value="black-on-yellow-45">
+														Black on Yellow Soft
+													</label>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+
+
+
+									<div class="column is-6">
+
+										<div class="color-scheme">
+											<div class="color-scheme-preview">
+												r<span class="highlighted-letter">e</span>ad
+											</div>
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentColorScheme" class=""
+															value="black-on-white">
+														Black on White
+													</label>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="color-scheme">
+											<div class="color-scheme-preview">
+												r<span class="highlighted-letter">e</span>ad
+											</div>
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentColorScheme" class=""
+															value="black-on-white-max">
+														Black on White Max
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="color-scheme">
+											<div class="color-scheme-preview">
+												r<span class="highlighted-letter">e</span>ad
+											</div>
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentColorScheme" class=""
+															value="black-on-white-9">
+														Black on White 9
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="color-scheme">
+											<div class="color-scheme-preview">
+												r<span class="highlighted-letter">e</span>ad
+											</div>
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentColorScheme" class=""
+															value="black-on-blue">
+														Black on Blue
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="color-scheme">
+											<div class="color-scheme-preview">
+												r<span class="highlighted-letter">e</span>ad
+											</div>
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentColorScheme" class=""
+															value="white-on-blue-45">
+														White on Blue Soft
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="color-scheme">
+											<div class="color-scheme-preview">
+												r<span class="highlighted-letter">e</span>ad
+											</div>
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentColorScheme" class=""
+															value="blue-on-white-45">
+														Blue on White Soft
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="color-scheme">
+											<div class="color-scheme-preview">
+												r<span class="highlighted-letter">e</span>ad
+											</div>
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentColorScheme" class=""
+															value="blue-on-yellow-45">
+														Blue on Yellow Soft
+													</label>
+												</div>
+											</div>
+										</div>
+
+
+
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="column is-6">
+
+							<div class="box">
+								<p class="subtitle">Font <i class="far fa-question-circle setting-tippy"
+										data-tippy-content="Use fonts that were designed for readability and comfort and used by companies like Apple, Google, Microsoft, Adobe, and Amazon.<br><br>Dyslexie is a font specifically designed to make reading easier for dyslexics."></i>
+								</p>
+								<div class="columns">
+									<div class="column is-6">
+										<div class="font">
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentFont" class="" value="georgia">
+														Georgia
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="font">
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentFont" class=""
+															value="bookerly">
+														Bookerly
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="font">
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentFont" class=""
+															value="helvetica-neue">
+														Helvetica Neue
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="font">
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentFont" class="" value="minion">
+														Minion
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="font">
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentFont" class=""
+															value="dyslexie">
+														Dyslexie
+													</label>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="column is-6">
+										<div class="font">
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentFont" class="" value="arial">
+														Arial
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="font">
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentFont" class=""
+															value="open-sans">
+														Open Sans
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="font">
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentFont" class=""
+															value="garamond">
+														Garamond
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="font">
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentFont" class=""
+															value="merriweather">
+														Merriweather
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="font">
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="currentFont" class="" value="tisa">
+														Tisa
+													</label>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+
+							<div class="box">
+								<p class="subtitle">Reading Context Display Style <i
+										class="far fa-question-circle setting-tippy"
+										data-tippy-content="When to show the textual context around the active word/chunk, and whether only a single line or multiple lines of context should be shown."></i>
+								</p>
+
+								<label class="label">Show context around focus word:</label>
+								<div class="columns">
+									<div class="column">
+										<div class="">
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="contextDisplayStyle" class=""
+															value="always">
+														Always
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="">
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="contextDisplayStyle" class=""
+															value="on-pause">
+														Only show when paused
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="">
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="contextDisplayStyle" class=""
+															value="never">
+														Never
+													</label>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<label class="label">If context mode shown:</label>
+								<div class="columns">
+									<div class="column">
+										<div class="">
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="combineBigwordWithContextEnabled"
+															class="" value="false">
+														Current line only
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="">
+											<div class="field">
+												<div class="control">
+													<label class="radio">
+														<input type="radio" name="combineBigwordWithContextEnabled"
+															class="" value="true">
+														Multi-line
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="columns">
+									<div class="column">
+										<div class="field">
+											<label class="label">Context opacity:</label>
+											<input id="contextOpacity" name="contextOpacity"
+												class="slider is-fullwidth is-primary has-output is-circle" step="0.1"
+												min="0.1" max="1" type="range">
+											<output for="contextOpacity"></output>
+										</div>
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="control">
+										<input id="contextFromRightEnabled" type="checkbox"
+											name="contextFromRightEnabled" class="switch">
+										<label class="label" for="contextFromRightEnabled">Show focus reading line
+											context from right
+											only</label>
+									</div>
+								</div>
+
+							</div>
+
+
+							<div class="box">
+								<p class="subtitle">Focus Letter <i class="far fa-question-circle setting-tippy"
+										data-tippy-content="How SwiftRead should help you focus on the focus letter."></i>
+								</p>
+								<div class="field">
+									<div class="control">
+										<input id="focusLetterIndicatorEnabled" type="checkbox"
+											name="focusLetterIndicatorEnabled" class="switch">
+										<label class="label" for="focusLetterIndicatorEnabled">Focus letter
+											indicator</label>
+									</div>
+								</div>
+								<div class="field">
+									<div class="control">
+										<input id="highlightColorEnabled" type="checkbox" name="highlightColorEnabled"
+											class="switch" data-dependent-setting="highlightColor">
+										<label class="label" for="highlightColorEnabled">Highlight center letter</label>
+									</div>
+								</div>
+								<div class="field">
+									<div class="control">
+										<input id="highlightColorUseCustom" type="checkbox"
+											name="highlightColorUseCustom" class="switch"
+											data-dependent-setting="highlightColor">
+										<label class="label" for="highlightColorUseCustom">Use custom highlight
+											color</label>
+									</div>
+								</div>
+
+								<div class="field">
+									<label class="label">Color</label>
+									<div class="control">
+										<input type="hidden" name="highlightColor" data-hidden-type="color-picker">
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="box">
+								<div class="field">
+									<div class="control">
+										<input id="backgroundColorEnabled" type="checkbox" name="backgroundColorEnabled"
+											class="switch" data-dependent-setting="backgroundColor">
+										<label class="label" for="backgroundColorEnabled">Use custom background
+											color</label>
+									</div>
+								</div>
+
+								<div class="field">
+									<label class="label">Color</label>
+									<div class="control">
+										<input type="hidden" name="backgroundColor" data-hidden-type="color-picker">
+									</div>
+								</div>
+							</div>
+
+
+							<div class="box">
+								<div class="field">
+									<div class="control">
+										<input id="fontColorEnabled" type="checkbox" name="fontColorEnabled"
+											class="switch" data-dependent-setting="fontColor">
+										<label class="label" for="fontColorEnabled">Use custom font color</label>
+									</div>
+								</div>
+
+								<div class="field">
+									<label class="label">Color</label>
+									<div class="control">
+										<input type="hidden" name="fontColor" data-hidden-type="color-picker">
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<a id="reading-settings"></a>
+					<div class="columns">
+						<div class="column is-6">
+
+							<div class="box">
+								<div class="field">
+									<div class="control">
+										<input id="startTimerEnabled" type="checkbox" name="startTimerEnabled"
+											class="switch" data-dependent-setting="startTimerLength">
+										<label class="label" for="startTimerEnabled">Auto-start timer <i
+												class="far fa-question-circle setting-tippy"
+												data-tippy-content="Enable/disable the auto-start, and if enabled set the timer length, for when you open a new SwiftRead window."></i></label>
+									</div>
+								</div>
+
+								<div class="field">
+									<label class="label">Auto-start timer length (sec)</label>
+									<input id="startTimerLength" name="startTimerLength"
+										class="slider is-fullwidth is-primary has-output is-circle" step="1" min="0"
+										max="5" type="range">
+									<output for="startTimerLength"></output>
+								</div>
+							</div>
+
+							<div class="box">
+								<p class="subtitle">Micro-pauses <i class="far fa-question-circle setting-tippy"
+										data-tippy-content="Micro-pauses are short pauses that make the speed reading experience more natural. Change the factor/multiplier that is applied for each type of micro-pause below.<br><br>Example: a factor of 0.5 for the Larger numbers miro-pause means that the time to the next word/chunk will be increased by 50% when there is a large/long number to read."></i>
+								</p>
+								<div class="field">
+									<div class="control">
+										<input id="micropauseNumbersEnabled" type="checkbox"
+											name="micropauseNumbersEnabled" class="switch"
+											data-dependent-setting="micropauseNumbersFactor">
+										<label class="label" for="micropauseNumbersEnabled">Large numbers</label>
+									</div>
+								</div>
+								<div class="field">
+									<label class="label">Large numbers factor</label>
+									<input id="micropauseNumbersFactor" name="micropauseNumbersFactor"
+										class="slider is-fullwidth is-primary has-output is-circle" step="0.1" min="0.1"
+										max="3" type="range">
+									<output for="micropauseNumbersFactor"></output>
+								</div>
+
+								<hr>
+
+								<div class="field">
+									<div class="control">
+										<input id="micropausePunctuationEnabled" type="checkbox"
+											name="micropausePunctuationEnabled" class="switch"
+											data-dependent-setting="micropauseEndingPunctuationFactor,micropausePunctuationFactor">
+										<label class="label" for="micropausePunctuationEnabled">Punctuation</label>
+										<i class="far fa-question-circle setting-tippy"
+											data-tippy-content="A micro-pause is applied after the current word if the current word contains one of the following <u>sentence end</u> punctuation marks: <code>&nbsp;.&nbsp;!&nbsp;?&nbsp;</code>.<br/><br/> A micro-pause is applied after the current word if the current word contains one of the following <u>other punctuation</u> marks <code>&nbsp;,&nbsp;;&nbsp;:&nbsp;)&nbsp;</code>, or if the next word contains one of: <code>&nbsp;(&nbsp;</code>"></i>
+									</div>
+								</div>
+								<div class="field">
+									<label class="label">Sentence End Punctuation factor</label>
+									<input id="micropauseEndingPunctuationFactor"
+										name="micropauseEndingPunctuationFactor"
+										class="slider is-fullwidth is-primary has-output is-circle" step="0.1" min="0.1"
+										max="3" type="range">
+									<output for="micropauseEndingPunctuationFactor"></output>
+								</div>
+								<div class="field">
+									<label class="label">All Other Punctuation factor</label>
+									<input id="micropausePunctuationFactor" name="micropausePunctuationFactor"
+										class="slider is-fullwidth is-primary has-output is-circle" step="0.1" min="0.1"
+										max="3" type="range">
+									<output for="micropausePunctuationFactor"></output>
+								</div>
+
+								<hr>
+
+								<div class="field">
+									<div class="control">
+										<input id="micropauseParagraphEnabled" type="checkbox"
+											name="micropauseParagraphEnabled" class="switch"
+											data-dependent-setting="micropauseParagraphFactor">
+										<label class="label" for="micropauseParagraphEnabled">New Paragraph</label>
+										<i class="far fa-question-circle setting-tippy"
+											data-tippy-content="A micro-pause is applied before a new paragraph begins."></i>
+									</div>
+								</div>
+								<div class="field">
+									<label class="label">New Paragraph factor</label>
+									<input id="micropauseParagraphFactor" name="micropauseParagraphFactor"
+										class="slider is-fullwidth is-primary has-output is-circle" step="0.1" min="0.1"
+										max="3" type="range">
+									<output for="micropauseParagraphFactor"></output>
+								</div>
+
+								<hr>
+
+
+								<div class="field">
+									<div class="control">
+										<input id="micropauseLongWordsEnabled" type="checkbox"
+											name="micropauseLongWordsEnabled" class="switch"
+											data-dependent-setting="micropauseLongWordsFactor">
+										<label class="label" for="micropauseLongWordsEnabled">Long words</label>
+									</div>
+								</div>
+								<div class="field">
+									<label class="label">Long words factor</label>
+									<input id="micropauseLongWordsFactor" name="micropauseLongWordsFactor"
+										class="slider is-fullwidth is-primary has-output is-circle" step="0.1" min="0.1"
+										max="3" type="range">
+									<output for="micropauseLongWordsFactor"></output>
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="column is-6">
+
+							<div class="box">
+								<div class="field">
+									<label class="label">WPM Increase/Decrease Interval: <i
+											class="far fa-question-circle setting-tippy"
+											data-tippy-content="The interval that WPM increases or decreases by when changed in the main SwiftRead window."></i></label>
+									<input id="wpmInterval" name="wpmInterval"
+										class="slider is-fullwidth is-primary has-output is-circle" step="1" min="1"
+										max="200" type="range">
+									<output for="wpmInterval"></output>
+								</div>
+							</div>
+
+							<div class="box">
+								<div class="field">
+									<label class="label">Letter spacing (px) <i
+											class="far fa-question-circle setting-tippy"
+											data-tippy-content="The number of pixels between each letter or character."></i></label>
+									<input id="letterSpacing" name="letterSpacing"
+										class="slider is-fullwidth is-primary has-output is-circle" step="0.5" min="0"
+										max="15" type="range">
+									<output for="letterSpacing"></output>
+								</div>
+							</div>
+
+							<div class="box">
+								<div class="field">
+									<div class="control">
+										<input id="textScrollerEnabled" type="checkbox" name="textScrollerEnabled"
+											class="switch">
+										<label class="label" for="textScrollerEnabled">Enable slider? <i
+												class="far fa-question-circle setting-tippy"
+												data-tippy-content="Toggle the horizontal slider bar that shows your reading progress and lets you scroll though text."></i></label>
+									</div>
+								</div>
+							</div>
+
+							<div class="box">
+								<div class="field">
+									<div class="control">
+										<input id="autoPageTurnEnabled" type="checkbox" name="autoPageTurnEnabled"
+											class="switch">
+										<label class="label" for="autoPageTurnEnabled">Auto-page turn <i
+												class="far fa-question-circle setting-tippy"
+												data-tippy-content="Enable/disable whether SwiftRead automatically turns to the next page after reaching the end of the current one (for Google Docs and PDF reading)."></i></label>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<a id="hotkeys"></a>
+					<div class="columns">
+						<div class="column is-12">
+
+							<div class="box">
+								<p class="subtitle is-5">Hotkeys <i class="far fa-question-circle setting-tippy"
+										data-tippy-content="Change SwiftRead's hotkeys here."></i></p>
+								<p class="subtitle is-6">Reader</p>
+								<div class="field is-horizontal hotkey-field">
+									<div class="field-label is-normal">
+										<label class="label">Open SwiftRead</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<p class="control">
+												<a class="button is-small is-rounded is-fullwidth chrome-hotkey"
+													name="open-spreed"></a>
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="field is-horizontal hotkey-field">
+									<div class="field-label is-normal">
+										<label class="label">Toggle Full-screen</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<p class="control">
+												<button class="button is-small is-rounded is-fullwidth hotkey"
+													name="hotkeyFullscreen" type="submit"></button>
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="field is-horizontal hotkey-field">
+									<div class="field-label is-normal">
+										<label class="label">Rewind</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<p class="control">
+												<button class="button is-small is-rounded is-fullwidth hotkey"
+													name="hotkeyRewind" type="submit"></button>
+											</p>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="field is-horizontal hotkey-field">
+									<div class="field-label is-normal">
+										<label class="label">Fast-forward</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<p class="control">
+												<button class="button is-small is-rounded is-fullwidth hotkey"
+													name="hotkeyForward" type="submit"></button>
+											</p>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="field is-horizontal hotkey-field">
+									<div class="field-label is-normal">
+										<label class="label">Reset</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<p class="control">
+												<button class="button is-small is-rounded is-fullwidth hotkey"
+													name="hotkeyReset" type="submit"></button>
+											</p>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="field is-horizontal hotkey-field">
+									<div class="field-label is-normal">
+										<label class="label">Page Left</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<p class="control">
+												<button class="button is-small is-rounded is-fullwidth hotkey"
+													name="hotkeyPageLeft" type="submit"></button>
+											</p>
+										</div>
+									</div>
+								</div>
+
+
+
+								<div class="field is-horizontal hotkey-field">
+									<div class="field-label is-normal">
+										<label class="label">Page Right</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<p class="control">
+												<button class="button is-small is-rounded is-fullwidth hotkey"
+													name="hotkeyPageRight" type="submit"></button>
+											</p>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="field is-horizontal hotkey-field">
+									<div class="field-label is-normal">
+										<label class="label">Toggle Context Mode</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<p class="control">
+												<button class="button is-small is-rounded is-fullwidth hotkey"
+													name="hotkeyToggleContextMode" type="submit"></button>
+											</p>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="field is-horizontal hotkey-field">
+									<div class="field-label is-normal">
+										<label class="label">Close</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<p class="control">
+												<button class="button is-small is-rounded is-fullwidth hotkey"
+													name="hotkeyQuit" type="submit"></button>
+											</p>
+										</div>
+									</div>
+								</div>
+
+
+
+								<!-- <div class="field is-horizontal hotkey-field">
+								  <div class="field-label is-normal">
+								    <label class="label">Hide</label>
+								  </div>
+								  <div class="field-body">
+								    <div class="field">
+								      <p class="control">
+								        <button class="button is-small is-rounded is-fullwidth hotkey" name="hotkeyHide" type="submit"></button>
+								      </p>
+								    </div>
+								  </div>
+								</div> -->
+
+
+								<hr>
+								<p class="subtitle is-6">WPM</p>
+								<div class="field is-horizontal hotkey-field">
+									<div class="field-label is-normal">
+										<label class="label">Increase</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<p class="control">
+												<button class="button is-small is-rounded is-fullwidth hotkey"
+													name="hotkeyWPMIncrease" type="submit"></button>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="field is-horizontal hotkey-field">
+									<div class="field-label is-normal">
+										<label class="label">Decrease</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<p class="control">
+												<button class="button is-small is-rounded is-fullwidth hotkey"
+													name="hotkeyWPMDecrease" type="submit"></button>
+											</p>
+										</div>
+									</div>
+								</div>
+
+
+
+
+								<hr>
+								<p class="subtitle is-6">Chunk Size</p>
+								<div class="field is-horizontal hotkey-field">
+									<div class="field-label is-normal">
+										<label class="label">Increase</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<p class="control">
+												<button class="button is-small is-rounded is-fullwidth hotkey"
+													name="hotkeyChunkSizeIncrease" type="submit"></button>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="field is-horizontal hotkey-field">
+									<div class="field-label is-normal">
+										<label class="label">Decrease</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<p class="control">
+												<button class="button is-small is-rounded is-fullwidth hotkey"
+													name="hotkeyChunkSizeDecrease" type="submit"></button>
+											</p>
+										</div>
+									</div>
+								</div>
+
+
+
+								<hr>
+								<p class="subtitle is-6">Font Size</p>
+								<div class="field is-horizontal hotkey-field">
+									<div class="field-label is-normal">
+										<label class="label">Increase</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<p class="control">
+												<button class="button is-small is-rounded is-fullwidth hotkey"
+													name="hotkeyFontSizeIncrease" type="submit"></button>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="field is-horizontal hotkey-field">
+									<div class="field-label is-normal">
+										<label class="label">Decrease</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<p class="control">
+												<button class="button is-small is-rounded is-fullwidth hotkey"
+													name="hotkeyFontSizeDecrease" type="submit"></button>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<a id="experimental-settings"></a>
+					<div class="columns">
+						<div class="column is-12">
+							<h1>Experimental Settings</h1>
+							<div class="box">
+								<!-- <p class="subtitle">Text Sanitization Rules</p> -->
+
+								<div class="field has-addons">
+									<div class="control is-expanded is-small">
+										<label class="label is-small">
+											Remove text that matches the following regular expression
+											<i class="far fa-question-circle setting-tippy"
+												data-tippy-content="e.g. the regular expression <code>\s?\[.*?\d+.*?\]</code> removes square brackets and the enclosed text if it includes at least one digit, as well as the preceding space if there is one.</a>"></i>
+										</label>
+										<input type="text" id="sanitizationRule" name="sanitizationRule"
+											class="input is-small" placeholder="Enter rule here">
+										<p class="help">To test your regular expressions, visit <a target="_blank"
+												href="https://regexr.com/">https://regexr.com/</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+		</div>
+
+		<p id="spreed-version" class="is-size-7 has-text-grey"></p>
+
+
+	</div>
+
+</div>

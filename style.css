@@ -1,0 +1,1000 @@
+/* ------ CSS Reset ------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	background: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.clearfix {
+	clear: both;
+	height: 0px;
+}
+
+#status ::-moz-selection, #controls ::-moz-selection{
+background-color:Transparent;
+}
+
+#status ::selection, #controls ::selection {
+background-color:Transparent;
+}
+
+
+
+/* ------ Main ------*/
+
+body {
+	font-family: "Trebuchet MS", Trebuchet, sans-serif;
+}
+
+#container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0 40px;
+	width: 100%;
+	min-width: 660px;
+	min-height: 250px;
+	height: auto;
+	display: flex; flex-direction: column; justify-content: space-between;
+}
+
+/* ------ Status Groups ------*/
+
+#status {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px 0 0 0;
+	opacity: 0.5;
+	font-size: 12px;
+	-webkit-transition: all 0.25s; /* For Safari 3.1 to 6.0 */
+	transition: all 0.25s;
+}
+
+#status:hover {
+	opacity: 1;
+}
+
+#status .status-group-left {
+	text-align: left;
+}
+
+#status .status-group-right {
+	text-align: right;
+}
+
+#status .status-group-left .config-group {
+	margin-right: 30px;
+	-webkit-transition: all 0.25s; /* For Safari 3.1 to 6.0 */
+	transition: all 0.25s;
+}
+
+#status .status-group-right .config-group {
+	margin-left: 20px;
+	-webkit-transition: all 0.25s; /* For Safari 3.1 to 6.0 */
+	transition: all 0.25s;
+}
+
+
+.config-group {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+#time-estimate {
+	font-weight: bold;
+
+}
+
+.config-title {
+	display: inline-block;
+	vertical-align: baseline;
+	padding: 26px 0px;
+
+}
+
+
+.config-display {
+	padding: 25px 0px 23px 0px;
+	display: inline-block;
+	vertical-align: baseline;
+	position: relative;
+	min-width: 24px;
+}
+
+.config-display-text {
+	width: 100%;
+	font-weight: 700;
+	padding: 0px 5px;
+	text-align: center;
+}
+
+.config-button-up, .config-button-down {
+	position: absolute;
+	width: 100%;
+	height: 18px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.config-button-up { top: 3px; }
+.config-button-down { bottom: 3px; }
+
+.time-title {
+	font-style: italic;
+}
+
+.circle {
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	font-size: 12px;
+	text-align: center;
+	padding: 3px;
+	margin: -3px 0;
+	text-decoration: none;
+}
+
+a.circle {
+	cursor: pointer;
+}
+
+.yellow {
+	color:yellow;
+}
+
+.config-title {
+	cursor: pointer;
+	font-weight: 700;
+}
+
+
+
+/* ------ Context Display ------*/
+
+#context-container {
+	position: relative;
+	-webkit-transition: opacity 0.25s; /* For Safari 3.1 to 6.0 */
+	transition: opacity 0.25s;
+
+}
+#context-container #context {
+	position: absolute;
+	/*overflow: hidden;*/ /* removed: causing letters to get cut off */
+	white-space: nowrap;
+	/* line-height: normal; */ /* removed: set line-height dynamically to match font size */
+}
+#context-container #context * {
+	display: inline;
+}
+
+#context-container #context .context {
+	-webkit-transition: opacity 0.25s; /* For Safari 3.1 to 6.0 */
+	transition: opacity 0.25s;
+}
+#context-line-start {
+	margin-right: 0.25em;
+}
+
+.multiline-context {
+	position: absolute;
+	width: 100%;
+	padding: 1rem 3rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	letter-spacing: 0.5px;
+	-webkit-transition: opacity 0.25s; /* For Safari 3.1 to 6.0 */
+	transition: opacity 0.25s;
+}
+
+.multiline-context * {
+	display: inline;
+}
+
+.multiline-context .context-word {
+	cursor: pointer;
+}
+
+
+
+/* ------ Reading Area ------*/
+
+#word-container{
+    position: relative;
+    width: 100%;
+    flex-grow: 2;
+    overflow: hidden;
+}
+
+
+#word {
+	position:absolute;
+	white-space: nowrap;
+}
+
+#word .highlight {
+}
+
+/* word display styles */
+#word h1, #context h1, .multiline-context h1 {
+	font-weight: 700;
+	font-size: 100%;
+}
+#word h2, #context h2, .multiline-context h2 {
+	font-weight: 700;
+	font-size: 100%;
+}
+#word b, #context b, .multiline-context b,
+#word h3, #context h3, .multiline-context h3,
+#word h4, #context h4, .multiline-context h4,
+#word h5, #context h5, .multiline-context h5,
+#word h6, #context h6, .multiline-context h6 {
+	font-weight: 700;
+}
+#word small, #context small, .multiline-context small {
+	font-size: 100%;
+	font-weight: 400;
+}
+#word del, #context del, .multiline-context del {
+	text-decoration: line-through;
+}
+#word i, #context i, .multiline-context i,
+#word em, #context em, .multiline-context em {
+	font-style: italic;
+}
+#word u, #context u, .multiline-context u {
+	text-decoration: underline;
+}
+
+/* make sure to show a space after each styled element, because each WORD is a separate element */
+#word h1,
+#word h2,
+#word h3,
+#word h4,
+#word h5,
+#word h6,
+#word small,
+#word del,
+#word i,
+#word em,
+#word u,
+#word b,
+#word p {
+	display: inline;
+}
+
+/* ------ Loading ------*/
+#loading-container {
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:14px;
+}
+#loading-stats {
+	float:left;
+	clear:both;
+}
+
+#loading {
+	font-size:18px;
+	float:left;
+	margin-bottom:15px;
+}
+
+#loading-container .stats-line {
+	margin-bottom:10px;
+}
+
+.ellipsis i {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.0s;
+}
+
+.ellipsis i+i {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+}
+
+.ellipsis i+i+i {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+}
+
+@-webkit-keyframes dot {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+/* ------ Slider ------*/
+
+#slider-container {
+	width: 100%;
+	clear: both;
+	float: left;
+	padding: 10px 0;
+	-webkit-transition: opacity 0.25s; /* For Safari 3.1 to 6.0 */
+	transition: opacity 0.25s;
+	cursor: pointer;
+}
+
+#slider {
+	margin: 0 auto;
+	width: 94%;
+	border-radius: 0px;
+	border: none;
+	height: 3px;
+}
+
+
+#slider .ui-slider-handle {
+	margin: 1px 0 0 -1px;
+    height: 12px;
+    width: 12px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/* ------ Post read message: Congratulations, Share article ------ */
+#post-reading-status {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only{
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+#share-article-div{
+	opacity:0.5;
+	position:absolute;
+	width:700px;
+	top:270px;
+	left:160px;
+	z-index:99;
+}
+
+#share-article-fb {
+	width:400px;
+	float:left;
+}
+
+#share-article-label{
+	float:left;
+	font-size: 11px;
+	margin-right:10px;
+	margin-top:5px;
+}
+
+#congrats {
+	font-size:11px;
+	opacity: 0.75;
+	width:450px;
+	text-align: center;
+
+}
+
+/* ------ Control ------*/
+
+#controls {
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+	opacity: 0.5;
+	-webkit-transition: all 0.25s; /* For Safari 3.1 to 6.0 */
+	transition: all 0.25s;
+	padding-bottom: 15px;
+
+}
+
+#controls:hover {
+	opacity: 1;
+	-webkit-transition: all 0.25s; /* For Safari 3.1 to 6.0 */
+	transition: all 0.25s;
+
+}
+
+
+.controls-ul {
+	float: right;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.controls-ul li {
+	margin: 0 15px;
+	cursor: pointer;
+	overflow: hidden;
+	-webkit-transition: all 0.25s; /* For Safari 3.1 to 6.0 */
+	transition: all 0.25s;
+}
+
+.controls-ul li:hover {
+	opacity: 0.75;
+}
+
+.controls-ul li span {
+	position: relative;
+	left: -200px;
+}
+
+#update-container {
+
+}
+#update-container a{
+	color:black;
+	background:white;
+}
+#update-container a:hover{
+	color:black;
+	background:white;
+	text-decoration:none;
+}
+#update-container ul li{
+	margin-left:40px;
+}
+
+#controls-message {
+	display: flex;
+	align-items: center;
+	width: auto;
+	font-size: 12px;
+}
+#controls-message a{
+	padding: 5px 0;
+	border-bottom: 1px dotted #ccc;
+}
+
+#controls-message a.btn {
+	display: inline-block;
+	text-align: center;
+	vertical-align: center;
+	padding: .375rem .75rem;
+	border-radius: .25rem;
+	border: 1px solid transparent;
+	text-decoration: none;
+}
+#controls-message a.btn.btn-primary {
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff;
+}
+
+#show-controls {
+	position:absolute;
+	bottom:0;
+	right: 20px;
+	font-size:12px;
+	display: none;
+	opacity: 0.5;
+}
+
+#error-message {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#error-message > div {
+	padding: 0px 5px;
+}
+
+
+/* ------ Theming ------*/
+
+body {
+
+}
+body #status .config-group:hover {
+	opacity: 0.75;
+}
+body #status .config-group a:hover {
+	color: #999999;
+	opacity: 0.75;
+}
+body #status .svg-arrow .svg-path {
+	fill: #999999;
+}
+body #slider {
+	background: #999999;
+	opacity: 0.5;
+}
+body #slider .ui-slider-handle {
+	background: #999999;
+	border-color: #999999;
+	cursor: pointer;
+}
+body #word-container-timer {
+	border-bottom:3px solid #999999;
+}
+body #word-container-timer {
+	position:relative;
+	clear:both;
+	margin-left:auto;
+	margin-right:auto;
+	width: 0px;
+}
+
+
+
+
+
+/* ------ Pop Up ------*/
+
+#inline_tips {
+	padding: 5px 25px 10px 15px;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+#inline_tips h1 {
+	font-size: 12px;
+	font-weight: 700;
+	/*color: green;*/
+	margin: 15px 0 8px 0;
+	float: left;
+	clear: both;
+}
+
+#inline_tips .hotkeys-dd dt,
+#inline_tips .hotkeys-dd dd {
+	display: inline-block;
+	float: left;
+	vertical-align: baseline;
+}
+
+#inline_tips .hotkeys-dd dt {
+	height: 20px;
+	padding: 4px 6px 3px 6px;
+	border: 1px solid;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	clear: both;
+	border-radius: 3px;
+	margin: 3px 3px 3px 0px;
+	font-weight: 700;
+}
+
+#inline_tips .hotkeys-dd dt+dt {
+	clear: none;
+}
+
+#inline_tips .hotkeys-dd dd {
+	margin: 6px 0 5px 15px;
+}
+
+#inline_tips p {
+	float: left;
+	clear: left;
+	line-height: 1.4em;
+}
+#inline_tips p span.button-name {
+	text-decoration: underline;
+}
+
+.support-contact {
+	padding-top: 20px;
+	text-align: center;
+	clear: both;
+}
+.support-contact a {
+	text-decoration: underline;
+}
+.support-contact a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+/* ------ Settings ------*/
+/* need this to make text and buttons clickable in the overlay */
+#settings-overlay-container h1 {
+	color: #bbb !important;
+	font-size: 1em !important;
+	margin-bottom: 1em !important;
+	margin-top: 1em !important;
+}
+
+#settings-overlay-container .sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+#settings-overlay-container .menu {
+	font-size: 0.8rem;
+}
+
+#settings-overlay-container {
+	z-index: 2;
+}
+#settings-overlay-container .subtitle{
+	font-size: 1rem;
+}
+#settings-overlay-container button, #settings-overlay-container p, #settings-overlay-container a {
+	position: relative;
+}
+
+#settings-overlay-container input, #settings-overlay-container label {
+	color: #545547 !important;
+}
+#settings-overlay-container .settings-pane label {
+	font-size: 0.9rem !important;
+}
+
+#settings-close-button {
+	padding: 0px 10px;
+	height: 1.75em;
+	margin-bottom: 10px;
+}
+
+/* for slider output control */
+#settings-overlay-container input[type=range].slider:not([orient="vertical"]).has-output + output {
+	display: inline;
+	position: static;
+	background: #eee;
+	color: black;
+}
+
+#settings-overlay-container .hotkey {
+	font-weight: 700;
+}
+
+/* color picker */
+#settings-overlay-container .pickr .pcr-button {
+	border: 2px solid #cccccc !important;
+	width: 100% !important;
+}
+
+/* color schemes and fonts */
+#settings-overlay-container span.tag {
+	font-size: 0.5rem;
+}
+#settings-overlay-container .color-scheme {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+#settings-overlay-container .color-scheme .control {
+	text-align: center;
+	padding-top: 10px;
+}
+#settings-overlay-container .color-scheme-preview {
+	text-align: center;
+	padding: 15px 0;
+	border: 2px solid #cccccc;
+	border-radius: 2px;
+	font-family: Georgia, serif; /* TODO make this based on currently selected font */
+	letter-spacing: 0.5px;
+	font-weight: 700;
+}
+
+
+#settings-overlay-container .font label {
+	padding: 15px 0 15px 0;
+	font-size: 1.2rem;
+}
+
+
+
+
+
+/* page turn */
+#page-turn-container {
+	height: 100%;
+}
+#page-turn {
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	align-items: center;
+	font-weight: 200;
+	font-size: 2rem;
+}
+
+#page-turn div {
+	z-index: 1;
+}
+#page-turn div, #page-turn > div > a {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#page-turn > div > a {
+	text-decoration: none;
+
+	opacity: 0.5;
+	-webkit-transition: opacity 0.25s; /* For Safari 3.1 to 6.0 */
+	transition: opacity 0.25s;
+}
+
+#page-turn .page-turn-direction {
+	-webkit-transition: all 0.5s; /* For Safari 3.1 to 6.0 */
+	transition: all 0.5s;
+}
+#page-turn .page-turn-direction a:hover {
+	opacity: 1;
+	color: inherit;
+}
+
+#page-turn > #page-turn-left > a {
+	padding-right: 20px;
+}
+#page-turn > #page-turn-right > a {
+	padding-left: 20px;
+}
+
+
+
+
+/* payment form */
+#payment-form-container {
+  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+}
+#payment-form-container form {
+  width: 30vw;
+  min-width: 500px;
+  align-self: center;
+  /*box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1),
+    0px 2px 5px 0px rgba(50, 50, 93, 0.1), 0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 7px;*/
+  padding: 0 15px 15px 15px;
+}
+#payment-form-container input {
+  border-radius: 6px;
+  margin-bottom: 6px;
+  padding: 12px;
+  border: 1px solid rgba(50, 50, 93, 0.1);
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  background: white;
+  font-family: Arial, sans-serif;
+}
+#payment-form-container input:disabled {
+	cursor: not-allowed;
+}
+#payment-form-container .result-message {
+  margin-top: 10px;
+  line-height: 22px;
+  font-size: 16px;
+}
+#payment-form-container .result-message a {
+  color: rgb(89, 111, 214);
+  font-weight: 600;
+  text-decoration: none;
+}
+#payment-form-container .hidden {
+  display: none;
+}
+#payment-form-container #card-error {
+  color: rgb(105, 115, 134);
+  text-align: left;
+  font-size: 13px;
+  line-height: 17px;
+  margin-top: 12px;
+}
+#payment-form-container #card-element {
+  border-radius: 4px 4px 0 0 ;
+  padding: 12px;
+  border: 1px solid rgba(50, 50, 93, 0.1);
+  height: 44px;
+  width: 100%;
+  background: white;
+}
+#payment-form-container #payment-request-button {
+  margin-bottom: 32px;
+}
+/* Buttons and links */
+#payment-form-container button {
+  background: #5469d4;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  border-radius: 0 0 4px 4px;
+  border: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  width: 100%;
+}
+#payment-form-container button:hover {
+  filter: contrast(115%);
+}
+#payment-form-container button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* spinner/processing state, errors */
+#payment-form-container .spinner,
+#payment-form-container .spinner:before,
+#payment-form-container .spinner:after {
+  border-radius: 50%;
+}
+#payment-form-container .spinner {
+  color: #ffffff;
+  font-size: 22px;
+  text-indent: -99999px;
+  margin: 0px auto;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 0 0 0 2px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+#payment-form-container .spinner:before,
+#payment-form-container .spinner:after {
+  position: absolute;
+  content: "";
+}
+#payment-form-container .spinner:before {
+  width: 10.4px;
+  height: 20.4px;
+  background: #5469d4;
+  border-radius: 20.4px 0 0 20.4px;
+  top: -0.2px;
+  left: -0.2px;
+  -webkit-transform-origin: 10.4px 10.2px;
+  transform-origin: 10.4px 10.2px;
+  -webkit-animation: loading 2s infinite ease 1.5s;
+  animation: loading 2s infinite ease 1.5s;
+}
+#payment-form-container .spinner:after {
+  width: 10.4px;
+  height: 10.2px;
+  background: #5469d4;
+  border-radius: 0 10.2px 10.2px 0;
+  top: -0.1px;
+  left: 10.2px;
+  -webkit-transform-origin: 0px 10.2px;
+  transform-origin: 0px 10.2px;
+  -webkit-animation: loading 2s infinite ease;
+  animation: loading 2s infinite ease;
+}
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 600px) {
+  #payment-form-container form {
+    width: 80vw;
+  }
+}
+#payment-modal .blurb p, #payment-modal .blurb ul{
+	font-size: 0.9rem;
+}
+
+/* Focus guide and indicator */
+.focus-indicator {
+	height: 15px;
+	width: 100%; 
+	position:absolute;
+	display: none;
+}
+#top-focus-indicator {
+	border-top: 4px solid;
+}
+#bottom-focus-indicator {
+	border-bottom: 4px solid;
+}
+
+.focus-indicator-mark {
+	height: 15px;
+	width: 4px;
+}

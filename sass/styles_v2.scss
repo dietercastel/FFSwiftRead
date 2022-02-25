@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Sen:400,700|Merriweather:400,700');
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #545547;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$teal: #244e52;
+$turquoise: #46a1b6;
+$lime: #bed562;
+
+// Update Bulma's global variables
+$family-sans-serif: "Sen", sans-serif;
+$grey-dark: $brown; // text
+$grey-light: $beige-light; // border hover
+$primary: $teal;
+$link: $turquoise;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
+@import "../node_modules/bulma/sass/grid/tiles.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/elements/icon.sass";
+@import "../node_modules/bulma/sass/elements/table.sass";
+@import "../node_modules/bulma/sass/elements/box.sass";
+@import "../node_modules/bulma/sass/elements/tag.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/components/menu.sass";
+@import "../node_modules/bulma/sass/components/level.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/layout/footer.sass";
+
+@import "../node_modules/bulma-switch/dist/css/bulma-switch.sass";
+@import "../node_modules/bulma-slider/dist/css/bulma-slider.sass";
+
+
+// Custom global styles
+h1, h2, h3, h4, h5 {
+	font-family: "Merriweather", serif;
+}
+
+kbd {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.1em 0.5em;
+    margin: 0 0.2em;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+    background-color: #f7f7f7;
+}
+
+.overflow-auto {
+	overflow: auto !important;
+}
+
+// fonts
+@font-face {
+  font-family: "Bookerly";
+  src: url("fonts/Bookerly-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Garamond";
+  src: url("fonts/GaramondPro-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("fonts/Georgia-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("fonts/HelveticaNeue-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("fonts/Merriweather-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Minion";
+  src: url("fonts/MinionPro-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Tisa";
+  src: url("fonts/TisaPro-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Dyslexie";
+  src: url("fonts/Dyslexie-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Arial";
+  src: url("fonts/Arial.ttf") format("truetype");
+}

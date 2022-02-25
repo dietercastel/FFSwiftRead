@@ -1,0 +1,118 @@
+{
+	"highlightColor": {
+		"updateFunction": "updateCustomStyleElements",
+		"handleClickFunction": "handleColorChange"
+	},
+	"highlightColorEnabled": {
+		"updateFunction": "updateCustomStyleElements",
+		"handleClickFunction": "handleCheckboxClick"
+	},
+	"highlightColorUseCustom": {
+		"updateFunction": "updateCustomStyleElements",
+		"handleClickFunction": "handleCheckboxClick"
+	},
+	"backgroundColor": {
+		"updateFunction": "updateCustomStyleElements",
+		"handleClickFunction": "handleColorChange"
+	},
+	"backgroundColorEnabled": {
+		"updateFunction": "updateCustomStyleElements",
+		"handleClickFunction": "handleCheckboxClick"
+	},
+	"fontColor": {
+		"updateFunction": "updateCustomStyleElements",
+		"handleClickFunction": "handleColorChange"
+	},
+	"fontColorEnabled": {
+		"updateFunction": "updateCustomStyleElements",
+		"handleClickFunction": "handleCheckboxClick"
+	},
+	"startTimerEnabled": {
+		"updateFunction": "getTimerDelay",
+		"handleClickFunction": "handleCheckboxClick"
+	},
+	"startTimerLength": {
+		"updateFunction": "getTimerDelay",
+		"handleClickFunction": "handleRangeChange"
+	},
+	"micropauseNumbersEnabled": {
+		"updateFunction": "getMicropauseSettings",
+		"handleClickFunction": "handleCheckboxClick"
+	},
+	"micropausePunctuationEnabled": {
+		"updateFunction": "getMicropauseSettings",
+		"handleClickFunction": "handleCheckboxClick"
+	},
+	"micropauseLongWordsEnabled": {
+		"updateFunction": "getMicropauseSettings",
+		"handleClickFunction": "handleCheckboxClick"
+	},
+	"micropauseNumbersFactor": {
+		"updateFunction": "getMicropauseSettings",
+		"handleClickFunction": "handleRangeChange"
+	},
+	"micropausePunctuationFactor": {
+		"updateFunction": "getMicropauseSettings",
+		"handleClickFunction": "handleRangeChange"
+	},
+	"micropauseLongWordsFactor": {
+		"updateFunction": "getMicropauseSettings",
+		"handleClickFunction": "handleRangeChange"
+	},
+
+	"hotkeyRewind": {
+		"updateFunction": "anon",
+		"handleClickFunction": "handleHotkeyChange"
+	},
+	"hotkeyReset": {
+		"updateFunction": "anon",
+		"handleClickFunction": "handleHotkeyChange"
+	},
+	"hotkeyQuit": {
+		"updateFunction": "anon",
+		"handleClickFunction": "handleHotkeyChange"
+	},
+	"hotkeyWPMIncrease": {
+		"updateFunction": "anon",
+		"handleClickFunction": "handleHotkeyChange"
+	},
+	"hotkeyWPMDecrease": {
+		"updateFunction": "anon",
+		"handleClickFunction": "handleHotkeyChange"
+	},
+	"hotkeyChunkSizeIncrease": {
+		"updateFunction": "anon",
+		"handleClickFunction": "handleHotkeyChange"
+	},
+	"hotkeyChunkSizeDecrease": {
+		"updateFunction": "anon",
+		"handleClickFunction": "handleHotkeyChange"
+	},
+	"hotkeyFontSizeIncrease": {
+		"updateFunction": "anon",
+		"handleClickFunction": "handleHotkeyChange"
+	},
+	"hotkeyFontSizeDecrease": {
+		"updateFunction": "anon",
+		"handleClickFunction": "handleHotkeyChange"
+	},
+
+	"textScrollerEnabled": {
+		"updateFunction": "getTextScrollerStatusDisplay",
+		"handleClickFunction": "handleCheckboxClick"
+	},
+	"letterSpacing": {
+		"updateFunction": "updateCustomStyleElements",
+		"handleClickFunction": "handleRangeChange"
+	},
+	"currentColorScheme": {
+		"updateFunction": "updateCustomStyleElements",
+		"handleClickFunction": "handleRadioClick",
+		"handleRadioChoiceFunction": "handleRadioChoice"
+	},
+	"currentFont": {
+		"updateFunction": "updateCustomStyleElements",
+		"handleClickFunction": "handleRadioClick",
+		"handleRadioChoiceFunction": "handleRadioChoice"
+	}
+}

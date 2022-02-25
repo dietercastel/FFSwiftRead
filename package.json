@@ -1,0 +1,26 @@
+{
+  "name": "swiftread",
+  "version": "1.0.0",
+  "description": "[On the Chrome web store](https://chrome.google.com/webstore/detail/ipikiaejjblmdopojhpejjmbedhlibno)",
+  "main": "sass/styles_v2.scss",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/styles_v2.scss css/styles_v2.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troyshu/spreed.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/troyshu/spreed/issues"
+  },
+  "homepage": "https://github.com/troyshu/spreed#readme",
+  "devDependencies": {
+    "bulma": "^0.8.1",
+    "bulma-slider": "^2.0.0",
+    "bulma-switch": "^2.0.0",
+    "node-sass": "^4.13.1"
+  }
+}

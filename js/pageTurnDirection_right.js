@@ -1,0 +1,1 @@
+pageTurnDirection = 'right';

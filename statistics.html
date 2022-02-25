@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SwiftRead - Statistics</title>
+
+	<script src="analytics.js" type="text/javascript"></script>
+	<script src="jquery.js" type="text/javascript"></script>
+	<script src="jquery-ui.min.js" type="text/javascript"></script>
+	<script src="statistics.js" type="text/javascript"></script>
+	<script src="donation.js" type="text/javascript"></script>
+
+
+	<LINK href="jquery-ui.min.css" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="css/styles_v2.css">
+
+
+</head>
+
+<body class="statistics">
+
+
+	<section class="section">
+		<div class="container">
+
+			<h1 class=title>Your SwiftRead statistics</h1>
+
+
+
+			<div class="columns">
+				<div class="column">
+					<div class="box content">
+						<div id="statistics-container">
+							<table class="table" id="statistics-table">
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="box content">
+						<div id="donate-container">
+
+							<form id="recurring-form" action="https://www.paypal.com/cgi-bin/webscr" method="post"
+								target="_top">
+
+								<input id='donation-type' type="hidden" name="cmd" value="_xclick-subscriptions">
+								<input type="hidden" name="business" value="RKTU5ZFAVHRLG">
+								<input type="hidden" name="lc" value="US">
+								<input type="hidden" name="item_name" value="Donation to Troy, creator of SwiftRead!">
+
+								<input type="hidden" name="no_note" value="1">
+								<input type="hidden" name="no_shipping" value="2">
+								<input type="hidden" name="src" value="1">
+								<input type="hidden" name="p3" value="1">
+								<input type="hidden" name="t3" value="M">
+								<input type="hidden" name="currency_code" value="USD">
+								<input type="hidden" name="bn"
+									value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHosted">
+								<table class="table">
+
+									<tr>
+										<th colspan="2">Like SwiftRead? Buy Troy, the developer, a coffee :)</th>
+										<th></th>
+									</tr>
+									<tr>
+										<td>When would you like the donation to recur?</td>
+										<td>
+											<select class="control" id="donation-recurrence">
+												<option value="M">Monthly</option>
+												<option value="O">One-time</option>
+											</select>
+										</td>
+									</tr>
+
+									<tr id="monthly-donation-amount-row">
+										<td>Monthly Donation Amount</td>
+										<td>
+											<div class="field has-addons">
+												<p class="control">
+													<a class="button is-static">
+														$
+													</a>
+												</p>
+												<p class="control">
+													<input class="input" id="donation-amount" type="text" name="a3"
+														maxlength="10" value="2">
+												</p>
+											</div>
+										</td>
+									</tr>
+								</table>
+
+								<input id="donate-button" class="button is-primary" type="submit" border="0"
+									name="submit" alt="Support the developer" value="Support the developer ☕️">
+
+								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+									width="1" height="1">
+
+								<p><small>My BTC address: 1Amth3u2FXtPs6erGsLAP4fpRq1pFGL8L3</small></p>
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="box content">
+				<p>
+				<h4 class="title is-4">How much time have you saved with SwiftRead?</h4>
+
+
+				<div id="worth-container">
+					<h6 class="title is-6">1. How much is your time worth?</h6>
+
+					<div id="hourlyrate"></div>
+					<div id="hourlyrate-container">
+						<div id="hourlyrate-slider"></div>
+					</div>
+					<br><br>
+					<h6 class="title is-6">2. The time and money you've saved, based on your SwiftRead usage:</h6>
+					<table class="table" id="timeworth-table">
+
+					</table>
+
+
+				</div>
+
+				</p>
+			</div>
+
+		</div>
+	</section>
+
+</body>
+
+<footer class="footer">
+	<div class="content has-text-centered">
+		<p>
+			Have a question? Reach out <a target="_blank" href="mailto:support@swiftread.com">here</a>. Like SwiftRead?
+			<a class="a-homepage-url" target="_blank" href="">Give us 5 stars on the
+				extension store!</a>
+		</p>
+		<br>
+		<p>
+			<small>Made with ❤️ in NYC. Copyright SwiftRead.</small>
+		</p>
+	</div>
+</footer>
+
+</html>

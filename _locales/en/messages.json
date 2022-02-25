@@ -1,0 +1,10 @@
+{
+  "app_name": {
+    "message": "SwiftRead - read faster, learn faster",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "app_description": {
+    "message": "Read two or three times faster, with SwiftRead. Absorb knowledge and learn faster.",
+    "description":"The description of the application, displayed in the web store."
+  }
+}
